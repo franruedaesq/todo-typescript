@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+.card {
+  /* border: 1px solid gainsboro; */
+  border-radius: 5px;
+  padding: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-body {
+  max-width: 500px;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* justify-content: center; */
+}
+
+
+input {
+  height: 24px;
+  border-radius: 5px;
+  border: 1px solid gainsboro;
+  padding: 5px 10px;
+}
+
+.button-save {
+  height: 28px;
+  background-color: #59bb59;
   color: white;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: 1px solid gainsboro;
+  cursor: pointer;
+  margin-top: 5px;
+  transition: all .2s;
 }
 
-.App-link {
-  color: #61dafb;
+.button-save:active {
+  transform: scale(0.99);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-check {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  transition: all .2;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button-check:active {
+  transform: scale(0.9);
+}
+.button-check:hover {
+  transform: scale(1.05);
+}
+.removeTask {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.removeTask:hover {
+  transform: scale(1.05);
+}
+
+h3 {
+  margin: 0;
+  font-weight: 300;
+}
+
+li {
+  margin: 0 auto;
+  max-width: 400px;
+  padding: 10px;
+  border-bottom: 1px solid gainsboro;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.done {
+  text-decoration: line-through;
 }
